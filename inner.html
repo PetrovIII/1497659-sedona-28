@@ -10,7 +10,7 @@
  <nav>
 
    <a href="index.html">На главную</a>
-   <img src="sedona_logo.svg" width="138" height="70" alt="Герб города Седона">
+   <img src="img/sedona_logo.svg" width="138" height="70" alt="Герб города Седона">
 
 
   <ul>
@@ -18,56 +18,74 @@
    <li><a href="blank.html">Фото и видео</a></li>
    <li><a href="blank.html">Карта штата</a></li>
    <li><a href="inner.html">Гостиницы</a></li>
-  <ul>
+ </ul>
  </nav>
 </header>
 
 <main>
 
-<img src="background_blur.jpg" width="1200" height="217" alt="Размытое нечто">
+<img src="img/background_blur.jpg" width="1200" height="217" alt="Размытое нечто">
 
 <h1>Параметры поиска</h1>
 
 <section>
-  <h2>Инфраструктура</h2>
+
+  <form action="https://echo.htmlacademy.ru" method="get">
+    <fieldset>
+      <legend>Инфраструктура:</legend>
   <ul>
     <li>
-      <p>Бассейн<p>
       <!--Чекбокс-->
+      <input type="checkbox" name="swimming-pool" id="filter-swimming-pool"
+      checked>
+      <label for="filter-swimming-pool">бассейн</label>
     </li>
     <li>
-      <p>Парковка<p>
       <!--Чекбокс-->
+      <input type="checkbox" name="parking" id="filter-parking">
+      <label for="filter-parking">парковка</label>
     </li>
     <li>
-      <p>Wi-Fi<p>
       <!--Чекбокс-->
+      <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+      <label for="filter-wi-fi">wi-fi</label>
     </li>
-</section>
-
-<section>
-  <h2>Тип жилья:</h2>
+</ul>
+  </fieldset>
+    <fieldset>
+      <legend>Тип жилья:</legend>
   <ul>
     <li>
-      <p>Гостиница<p>
       <!--Чекбокс-->
+      <input type="checkbox" name="hotel" id="filter-hotel"
+      checked>
+      <label for="filter-hotel">Гостиница</label>
     </li>
     <li>
-      <p>Мотель<p>
       <!--Чекбокс-->
+      <input type="checkbox" name="motel" id="filter-motel"
+      checked>
+      <label for="filter-motel">Мотель</label>
     </li>
     <li>
-      <p>Апартаменты<p>
       <!--Чекбокс-->
+      <input type="checkbox" name="apartments" id="filter-apartments"
+      checked>
+      <label for="filter-apartments">Апартаменты</label>
     </li>
+</fieldset>
+  <fieldset>
+  <legend>Стоимость в сутки (Р):</legend>
+от 0 <input type="range" id="Cost-per-day" name="Cost-per-day" min="0" max="3000" step="1"> до 3000
+
+</fieldset>
+
+<button type="submit">Показать</button>
+
+
+</form>
 </section>
 
-<section>
-  <h2>Стоимость в сутки (Р):</h2>
-
-
-<button type="button" disabled>Показать</button>
-</section>
 
 <section>
 <h2>Результаты поиска</h2>
@@ -88,8 +106,8 @@
     <!--<button type="button" disabled>По рейтингу</button>-->
   </li>
 
-<img src="Shape_up.svg" width="11" height="10" alt="Сортировать по возрастанию">
-<img src="Shape_down.svg" width="11" height="10" alt="Сортировать по убыванию">
+<img src="img/Shape_up.svg" width="11" height="10" alt="Сортировать по возрастанию">
+<img src="img/Shape_down.svg" width="11" height="10" alt="Сортировать по убыванию">
 </section>
 
 <div>
@@ -100,7 +118,7 @@
   <button type="button" disabled>Забронировать</button>
   <!-- Звездочки рейтинга -->
   <p>Рейтинг: 8,5</p>
-  <img src="amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
+  <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
 </div>
 
 <div>
@@ -111,7 +129,7 @@
   <button type="button" disabled>Забронировать</button>
   <!-- Звездочки рейтинга -->
   <p>Рейтинг: 8,9</p>
-  <img src="desert_quail.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+  <img src="img/desert_quail.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
 </div>
 
 <div>
@@ -122,7 +140,7 @@
   <button type="button" disabled>Забронировать</button>
   <!-- Звездочки рейтинга -->
   <p>Рейтинг: 9,2</p>
-  <img src="poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+  <img src="img/poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
 </div>
 
 </main>
@@ -138,15 +156,15 @@
   <ul>
     <li>
       <a href="#">Twitter</a>
-      <img src="twitter_logo.svg" width="17" height="15" alt="Твиттер">
+      <img src="img/twitter_logo.svg" width="17" height="15" alt="Твиттер">
     </li>
     <li>
       <a href="#">Facebook</a>
-      <img src="facebook_logo.svg" width="12" height="22" alt="Фейсбук">
+      <img src="img/facebook_logo.svg" width="12" height="22" alt="Фейсбук">
     </li>
     <li>
       <a href="#">Youtube</a>
-      <img src="youtube_logo.svg" width="20" height="16" alt=">Ютуб">
+      <img src="img/youtube_logo.svg" width="20" height="16" alt=">Ютуб">
     </li>
   </ul>
   <!-- В следующем уроке будет объяснено, как оформить ссылки в виде картинки -->
@@ -155,7 +173,7 @@
 <p>
   website by
   <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-  <img src="logo-htmlacademy.svg" width="114" height="40" alt=">HTML Academy">
+  <img src="img/logo-htmlacademy.svg" width="114" height="40" alt=">HTML Academy">
 </p>
 
 </footer>
