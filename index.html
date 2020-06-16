@@ -3,20 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="page-body">
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-<header>
- <nav>
-   <a>
+<header class="main-header">
+ <nav class="main-navigation">
+   <a class="main-header-logo">
      <img src="img/sedona_logo.svg" width="138" height="70" alt="Герб города Седона">
    </a>
-  <ul>
+<div class="main-navigation-wrapper">
+<div class="container">
+  <ul class="site-navigation">
    <li><a href="blank.html">Информация</a></li>
    <li><a href="blank.html">Фото и видео</a></li>
    <li><a href="blank.html">Карта штата</a></li>
    <li><a href="inner.html">Гостиницы</a></li>
  </ul>
+  </div>
+</div>
  </nav>
 </header>
 
@@ -27,15 +35,15 @@
 <img src="img/shape.png" width="1200" height="57" alt="Форма">
 
 
-<h1>Туристический портал города Седона</h1>
+<h1 class="visually-hidden">Туристический портал города Седона</h1>
 
-<h4>Седона — небольшой городок в Аризоне,<br> заслуживающий большего! </h4>
+<h4 class="tag">Седона — небольшой городок в Аризоне,<br> заслуживающий большего! </h4>
 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-<section>
-  <h2>Преимущества</h2>
-  <ul>
-    <li>
+<section class="features">
+  <h2 class="visually-hidden">Преимущества</h2>
+  <ul class="features-list">
+    <li class="feature-item feature-item-w">
       <h3>Настоящий городок</h3>
       <p>-№1-</p>
       <p>Седона - не аттракцион для туристов, там<br>
@@ -45,46 +53,43 @@
 
 <!--нужно вписать  в первый пункт ul или это отдельный section?-->
 
-<li>
+<li class="feature-item">
 <h4>Жильё</h4>
 <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
 <img src="img/icon_house.svg" width="75" height="72" alt="Иконка Дом">
 </li>
-<li>
+<li class="feature-item">
 <h4>Еда</h4>
 <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
 <img src="img/icon_burger.svg" width="75" height="70" alt="Иконка Бургер">
 </li>
-<li>
+<li class="feature-item">
 <h4>Сувениры</h4>
 <p>Не только китайского, но и местного<br>
 производства!</p>
 <img src="img/icon_souvenir.svg" width="64" height="77" alt="Иконка Сувенир">
 </li>
-
-
-
-    <li>
+    <li class="feature-item feature-item-w">
       <h3>Там есть мост Дьявола</h3>
       <p>-№2-</p>
       <p>Да, по нему можно пройти! Если конечно<br>
 вы осмелитесь</p>
       <img src="img/sedona_devils_bridge.jpg" width="800" height="256" alt="Мост Дьявола">
     </li>
-    <li>
-      <h3>Небольшая площадь</h3>
+    <li class="feature-item">
+      <h4>Небольшая площадь</h4>
         <p>-№3-</p>
       <p>Все достопримечательности<br>
 находятся очень близко</p>
     </li>
-    <li>
-      <h3>Красивая дорога</h3>
+    <li class="feature-item">
+      <h4>Красивая дорога</h4>
       <p>-№4-</p>
       <p>Ехать в Седону из Лас-Вегаса совсем<br>
 не скучно!</p>
     </li>
-    <li>
-      <h3>Мало туристов</h3>
+    <li class="feature-item">
+      <h4>Мало туристов</h4>
         <p>-№5-</p>
       <p>Большинство едет в гранд каньон<br>
 и толпится там</p>
@@ -100,44 +105,35 @@
 
 <form action="https://echo.htmlacademy.ru" method="post">
 
+<h3>Поиск гостиницы в Cедоне</h3>
+
 <p>
   <label for="appointment-date">Дата заезда</label>
   <input id="appointment-date" type="text" name="appointment-date"
   value="24 апреля 2017">
-  <img src="img/calendar.svg" width="21" heigt="23" alt="календарь">
-<!--как отобразить месяц? просто текст?
-Error: Attribute heigt not allowed on element img at this point.
-
-From line 115, column 3; to line 115, column 68
-
- 2017">↩  <img src="img/calendar.svg" width="21" heigt="23" alt="календарь">↩<!-->
+  <img src="img/calendar.svg" width="21" height="23" alt="календарь">
 </p>
 
 <p>
   <label for="departure-date">Дата выезда</label>
   <input id="departure-date" type="text" name="departure-date"
   value="4 июля 2017">
-  <img src="img/calendar.svg" width="21" heigt="23" alt="календарь">
-<!--как отобразить месяц? просто текст?
-Error: Attribute heigt not allowed on element img at this point.
-
-From line 115, column 3; to line 115, column 68
-
- 2017">↩  <img src="img/calendar.svg" width="21" heigt="23" alt="календарь">↩<!-->
+  <img src="img/calendar.svg" width="21" height="23" alt="календарь">
 </p>
 
 <p>
   <label for="adult">Взрослые:</label>
   <input id="adult" type="number" name="adult" min="0" value="2">
-<!--как отобразить - и +, две кнопки? -->
+  <input type="button" value="-">
+  <input type="button" value="+">
 </p>
 
 <p>
   <label for="children">Дети:</label>
   <input id="children" type="number" name="children" min="0" value="0">
-<!--как отобразить - и +, две кнопки? -->
+  <input type="button" value="-">
+  <input type="button" value="+">
 </p>
-
 
 <button type="submit">Найти</button>
 </form>
@@ -148,7 +144,6 @@ From line 115, column 3; to line 115, column 68
 </div>
 
 </main>
-
 
 <footer>
 
